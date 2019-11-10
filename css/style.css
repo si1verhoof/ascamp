@@ -759,11 +759,6 @@ ul {
   width: 100%;
   background-position: center;
 }
-.parallax {
-  width: 200px;
-  height: 200px;
-  background-image: url('../img/icons/machico-1.png');
-}
 section {
   margin-top: 5vh;
 }
@@ -787,27 +782,35 @@ section {
 }
 .about__text {
   flex-grow: 1;
+  z-index: 3;
 }
 .parallax {
+  width: 200px;
+  height: 200px;
   position: absolute;
   content: "";
   z-index: 2;
+  background-size: cover;
 }
 .parallax--1 {
   top: 400px;
   left: -150px;
+  background-image: url('../img/icons/machico-1.png');
 }
 .parallax--2 {
   top: -100px;
   right: 200px;
+  background-image: url('../img/icons/machico-2.png');
 }
 .parallax--3 {
   bottom: 0px;
   left: 200px;
+  background-image: url('../img/icons/machico-3.png');
 }
 .parallax--4 {
   bottom: -400px;
   right: 0px;
+  background-image: url('../img/icons/machico-4.png');
 }
 .image-block {
   display: flex;
@@ -816,6 +819,9 @@ section {
 .photo {
   position: relative;
   overflow: visible;
+}
+.hobby__text {
+  z-index: 3;
 }
 .photo__img {
   width: 50%;
@@ -839,6 +845,7 @@ section {
   display: flex;
   flex-direction: column;
   margin-bottom: 10vh;
+  position: relative;
 }
 .outro__text {
   margin: 0 auto 5vh;
