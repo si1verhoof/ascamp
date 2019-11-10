@@ -1,0 +1,135 @@
+.swiper-slide {
+    width: 100%;
+    height: 60vh;
+}
+
+.swiper-slide img {
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    background-position: center;
+}
+
+.parallax {
+    width: 200px;
+    height: 200px;
+    background-image: url('../img/icons/machico-1.png');
+}
+
+section {
+    margin-top: 5vh;
+}
+
+.about {
+    position: relative;
+    overflow: visible;
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+
+    &__img--left {
+        margin-left: 50px;
+    }
+
+    &__img--right {
+        margin-right: 50px;
+    }
+
+    &__text {
+        flex-grow: 1;
+    }
+}
+
+.parallax {
+    position: absolute;
+    content: "";
+    z-index: 2;
+
+    &--1 {
+        top: 400px;
+        left: -150px;
+    }
+
+    &--2 {
+        top: -100px;
+        right: 200px;
+    }
+
+    &--3 {
+        bottom: 0px;
+        left: 200px;
+    }
+
+    &--4 {
+        bottom: -400px;
+        right: 0px;
+    }
+}
+
+.image-block{
+    display: flex;
+    flex-direction: row;
+}
+
+.photo {
+    position: relative;
+    overflow: visible;
+}
+
+.photo__img {
+    width: 50%;
+    object-fit: cover;
+
+    &:first-child {
+        margin: 0 20px 20px 0;
+    }
+}
+
+.hobby__img {
+    object-fit: cover;
+}
+
+@media (max-width:960px) {
+    .photo__img-block {
+        flex-wrap: wrap;
+    }
+
+    .photo__img {
+        width: 100%;
+    }
+}
+
+.outro {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vh;
+
+    &__text {
+        margin: 0 auto 5vh;
+    }
+
+    iframe {
+        margin: 0 auto;
+    }
+}
+
+.scroll-nav__list {
+    position: fixed;
+    right: 5%;
+    top: 5%;
+}
+
+.scroll-nav__href {
+    text-decoration: none;
+    color: @color-darkgrey;
+
+    &:hover {
+        color: @color-black;
+    }
+}

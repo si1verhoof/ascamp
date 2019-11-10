@@ -13,5 +13,9 @@
     "gulp-less": "^4.0.1",
     "path": "^0.12.7",
     "pump": "^3.0.0"
+  },
+  "dependencies": {
+    "scrollnav": "^3.0.2",
+    "swiper": "^5.2.0"
   }
 }

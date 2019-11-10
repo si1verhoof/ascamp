@@ -2,18 +2,188 @@
 <html lang="ru">
 
 <head>
-    <title>Тестовое задание: GoodFactory #2</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+  <title>Дневник</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <svg style="display:none">
-        <symbol id="icon-google" viewBox="0 0  ">
-            
-        </symbol>
-    </svg>
+  <header>
+    <nav class="scroll-nav">
+      <ul class="scroll-nav__list">
+        <li class="scroll-nav__item">
+          <a class="scroll-nav__href" href="#scroll-nav__1">
+            О себе
+          </a>
+        </li>
+        <li class="scroll-nav__item">
+          <a class="scroll-nav__href" href="#scroll-nav__2">
+            Фронт
+          </a>
+        </li>
+        <li class="scroll-nav__item">
+          <a class="scroll-nav__href" href="#scroll-nav__3">
+            Хобби 
+          </a>
+        </li>
+        <li class="scroll-nav__item">
+          <a class="scroll-nav__href" href="#scroll-nav__4">
+            Фото
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-content">
+    <div class="wrapper">
+      <section class="promo">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide" href="#scroll-nav__1">
+              <img src="img/carousel/susu.jpg">
+            </a>
+            <a class="swiper-slide" href="#scroll-nav__2">
+              <img src="img/carousel/web.png">
+            </a>
+            <a class="swiper-slide" href="#scroll-nav__3">
+              <img src="img/carousel/hobby.jpg">
+            </a>
+            <a class="swiper-slide" href="#scroll-nav__4">
+              <img src="img/carousel/photo.jpg">
+            </a>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <section class="about">
+          <div data-speed="170" class="parallax parallax--1"></div>
+          <div data-speed="150" class="parallax parallax--2"></div>
+          <div data-speed="140" class="parallax parallax--3"></div>
+          <div data-speed="105" class="parallax parallax--4"></div>
+        <h2 id="scroll-nav__1">О себе</h2>
+        <div class="about__item">
+          <img class="about__img about__img--right" src="img/titles/about.jpg" width="179px" height="241px" alt>
+          <p class="about__text">
+            Здравствйте, меня зовут Руслан и я интроверт, мне очень хочется рассказать Вам о себе.
+            Но начну по порядку. Мне 28 лет, я родился и вырос в городе радуги и единорогов - Челябинске.
+            Как и многих других детей 90-ых у меня было счастливое детсво, которое мы провели прыгая с гаражей,
+            занимаясь
+            каратэ и боксом, а наши родители ходили в шапках-шайбах.
+          </p>
+        </div>
+        <div class="about__item">
+          <p class="about__text">
+            Я учился в обычной средней школе. Стены выкрашенные в првилекательные синие-зеленые тона, отбеленный
+            потолок, парты с таким количеством слоев краски, что изучая скол чувсвтуешь себя археологом - такой была
+            школа в первые годы.
+            Стоит признать, что потом шик конца 90-ых начал отступать, ему на смену пришел современный дешевый ремонт.
+            Это были обычные школьные годы, в меру зубрежки, немного разгильдяйства, школьная самодеятьность,
+            подростковые проблемы и прыщи. Моя история так же уникальна, как и истории миллионов других детей.
+            <br/>
+            <br/><!--Да, мне было лень заморачиваться с сеткой-->
+            На смену школе пришел ВУЗ. "Потому что так надо". Не то, чтобы я был этим недоволен. Пусть я и считаю своё
+            образование бесполезным с пркиладной точки зрения, с учетом выпускной квалификации (экономист) и текущей
+            профессией (верстальщик),
+            но высшая школа дала мне друзей и сформировала мировоззрение. Жалеть об этом, значит желать стать другим
+            человеком.
+          </p>
+          <img class="about__img about__img--left" src="img/titles/study.png" width="107px" height="194px" alt>
+        </div>
+        <div class="about__item">
+          <img class="about__img about__img--right" src="img/titles/work.png" width="218px" height="151px" alt>
+          <p class="about__text">
+            Жизнь после ВУЗа можно рассматривать как прямое продолжение студенческих лет - стремление к неопределенной
+            цели. Так я стал аудитором и проработал на этой работе почти 4 года.
+            Несмотря на ту любовь, который пышет моя характеристика работы, в ней действительно были положительные
+            моменты: я объездил пол-России, и познакомился с огромным количеством клёвых людей, этого мне немного
+            нехватает.
+          </p>
+        </div>
+        <div class="about__item">
+          <p class="about__text">
+            Как и у любого человека, у меня есть увлечения, одни из них связаны с потреблением контента - кино,
+            видеоигры и литература, другие связаны с работой над собой и тягой к новому - пешие прогулки, изучение
+            иностранных языков и рисование.
+          </p>
+          <img class="about__img about__img--left" src="img/titles/art.png" width="114px" height="133px" alt>
+        </div>
+        <div class="about__item">
+          <img class="about__img about__img--right" src="img/titles/now.jpg" width="218px" height="151px" alt>
+          <p class="about__text">
+            Сейчас... А что сейчас? Моё нынешнее сегодня определено всем прошлым, которое я описал выше и моими планами
+            на будущее.
+            Если вы дочитали до этого момента, то пора раскрыть карты - всё это я написал для того, чтобы сетка страницы
+            выглядела соответствующе моей задумке, а не страстью к графомании.
+          </p>
+        </div>
+      </section>
+      <section class="frontend">
+        <h2 id="scroll-nav__2">Почему Фронт?</h2>
+        <p class="frontend__text">
+          Примерно 2 года назад я начал изучать фронт. В этом не было никакого сакрального смысла. Как человек, не
+          знающий, куда поехать отдыхать, закрывает глаза и тыкает в глобус, так и я попал во фронт.
+          Он оказался совсем не таким, как я ожидал. В лучшую сторону.
+        </p>
+        <p class="frontend__text">
+          Я изучал его с помощью разных ресурсов, книг и помощью друзей, а недавно начал работу верстальщиком.
+        </p>
+      </section>
+      <section class="hobby">
+        <h2 id="scroll-nav__3">Хобби</h2>
+        <p class="hobby__text">
+          В этой графе можно было бы развернуться на полную и пуститься в нудные рассказы о комиксах, фантастических
+          вселенных, теории и личном опыте в рисовании.
+          Но цель этой странички несколько иная, так что вот две картинки, одна с рисунком (что на нём объяснять я,
+          конечно, не намерен) и скрин с моим старым персонажем world of warcraft, времени на которого мне уже не
+          хватает.
+        </p>
+        <div class="hobby__img-block image-block">
+          <img class="hobby__img" src="img/art/donut.jpg" width="30%" height="400px" alt>
+          <img class="hobby__img" src="img/art/boomy.png" width="70%" height="400px" alt>
+        </div>
+      </section>
+      <section class="photo">
+        <div data-speed="170" class="parallax parallax--1"></div>
+        <div data-speed="150" class="parallax parallax--2"></div>
+        <div data-speed="140" class="parallax parallax--3"></div>
+        <div data-speed="105" class="parallax parallax--4"></div>
+        <h2 id="scroll-nav__4">Фото</h2>
+        <p class="photo__text">
+          Как уже говорилось выше, мне довелось поездить по разным городам, иногда, я делал там фотографии.
+          (Фотку с Пермью я честно стырил в сети, потому что свои не нашел )
+        </p>
+        <div class="photo__img-block image-block">
+          <img class="photo__img" src="img/travel/1.jpg" width="622px" height="400px" alt>
+          <img class="photo__img" src="img/travel/2.jpg" width="622px" height="400px" alt>
+        </div>
+        <div class="photo__img-block image-block">
+          <img class="photo__img" src="img/travel/3.jpg" width="622px" height="400px" alt>
+          <img class="photo__img" src="img/travel/4.jpg" width="622px" height="400px" alt>
+        </div>
+        <div class="photo__img-block image-block">
+          <img class="photo__img" src="img/travel/5.jpg" width="622px" height="400px" alt>
+          <img class="photo__img" src="img/travel/6.jpg" width="622px" height="400px" alt>
+        </div>
+        <div class="photo__img-block image-block">
+          <img class="photo__img" src="img/travel/7.jpg" width="622px" height="400px" alt>
+          <img class="photo__img" src="img/travel/8.jpg" width="622px" height="400px" alt>
+        </div>
+      </section>
+      <section class="outro">
+        <p class="outro__text">В качестве прощания оставлю мемное видео, открывать на свой страх и риск</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OVuYIMa5XBw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+    </div>
+  </main>
+  <script scr="js/scrollnav.min.umd.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/script.js"></script>
+  <!--script>
+    const content = document.querySelector('.main-content');
+    scrollnav.init(content);
+  </script-->
 </body>
 
 </html>
