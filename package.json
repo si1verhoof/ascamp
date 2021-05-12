@@ -16,6 +16,6 @@
   },
   "dependencies": {
     "scrollnav": "^3.0.2",
-    "swiper": "^5.2.0"
+    "swiper": "^6.5.1"
   }
 }
